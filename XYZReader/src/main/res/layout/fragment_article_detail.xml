@@ -11,6 +11,7 @@
     android:id="@+id/appBar"
     android:layout_width="match_parent"
     android:layout_height="300dp"
+    android:elevation="4dp"
     android:fitsSystemWindows="true"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
@@ -32,12 +33,11 @@
     </android.support.design.widget.CollapsingToolbarLayout>
   </android.support.design.widget.AppBarLayout>
 
-  <ScrollView
+  <android.support.v4.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:nestedScrollingEnabled="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <include layout="@layout/article_layout"/>
-  </ScrollView>
+  </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>
